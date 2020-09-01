@@ -16,6 +16,8 @@ namespace API.Helpers
 
             CreateMap<Address, AddressDto>();
             CreateMap<AddressDto, Address>();
+            CreateMap<CustomerBasketDto, CustomerBasket>();
+            CreateMap<BasketItemDto, BasketItem>();
         }
     }
 }
