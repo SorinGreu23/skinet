@@ -1,0 +1,9 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Infrastructure",
+    "\\Infrastructure\\Identity"
+  ],
+  "SelectedNode": "\\Infrastructure\\Identity\\AppIdentityDbContext.cs",
+  "PreviewInSolutionExplorer": false
+}
