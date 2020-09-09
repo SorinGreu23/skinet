@@ -17,7 +17,10 @@ export class LoadingInterceptor implements HttpInterceptor {
     req: HttpRequest<any>,
     next: HttpHandler
   ): Observable<HttpEvent<any>> {
-    if(req.method == 'POST' && req.url.includes('orders')){
+    if (req.method === 'POST' && req.url.includes('orders')){
+      return next.handle(req);
+    }
+    if (req.method === 'DELETE') {
       return next.handle(req);
     }
     if (req.url.includes('emailexists')) {
